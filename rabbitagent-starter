@@ -1,0 +1,71 @@
+rabbitagent-core/
+├── src/
+│   ├── core/
+│   │   ├── service_orchestrator/       # Distributed service management
+│   │   │   ├── task_scheduler.py
+│   │   │   └── resource_allocator.py
+│   │   │
+│   │   ├── crypto_engine/             # Cryptographic primitives
+│   │   │   ├── zk_circuits/           # Zero-Knowledge Proof circuits
+│   │   │   │   └── ml_verifier.zok
+│   │   │   ├── smpc_protocols/        # Secure Multi-Party Computation
+│   │   │   └── keystore_manager.py
+│   │   │
+│   │   └── tee_bridge/                # Trusted Execution Environment
+│   │       ├── intel_sgx/
+│   │       └── arm_trustzone/
+│   │
+│   ├── blockchain/
+│   │   ├── smart_contracts/           # Compiled Solidity/Move contracts
+│   │   │   ├── model_registry.sol
+│   │   │   └── proof_aggregator.mv
+│   │   │
+│   │   ├── chain_adapters/           # Multi-chain integration
+│   │   │   ├── evm_adapter.py
+│   │   │   └── cosmos_adapter.py
+│   │   │
+│   │   └── offchain_prover/           # zkML proof generation
+│   │       ├── gnark_runner.go
+│   │       └── halo2_prover.rs
+│   │
+│   ├── ai_runtime/                   # Local AI execution
+│   │   ├── model_serving/            # Optimized inference
+│   │   │   ├── onnx_executor.py
+│   │   │   └── ggml_quantizer.cpp
+│   │   │
+│   │   ├── federated_learning/       # Privacy-preserving training
+│   │   │   ├── secure_aggregation/
+│   │   │   └── differential_privacy/
+│   │   │
+│   │   └── model_registry/           # Versioned model storage
+│   │       ├── ipfs_adapter.py
+│   │       └── arweave_integration/
+│   │
+│   └── edge/
+│       ├── device_profiler/          # Hardware capability detection
+│       ├── power_manager/            # Energy-aware computing
+│       └── secure_enclave/           # Confidential memory handling
+│
+├── tests/
+│   ├── fuzzing/                     # Security testing
+│   ├── bench/                       # Performance benchmarks
+│   └── integration/
+│       ├── cross_chain/
+│       └── tee_validation/
+│
+├── config/
+│   ├── chains/                      # Chain-specific configurations
+│   ├── models/                      # Model quantization profiles
+│   └── privacy_policies/            # Regulatory compliance rules
+│
+├── docs/
+│   ├── protocol_specs/              # Technical whitepapers
+│   └── api_reference/               # Client integration docs
+│
+├── scripts/
+│   ├── deployment/                  # Infrastructure provisioning
+│   └── proof_optimization/          # zk-SNARK circuit tuning
+│
+├── Cargo.toml                       # Rust component management
+├── pyproject.toml                   # Python package config
+└── go.mod                           # Go module dependencies
